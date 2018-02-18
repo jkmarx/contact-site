@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NannyShareComponent } from './nanny-share/nanny-share.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
+	imports: [
+    BrowserModule,
+    AppRoutingModule
   ],
-  imports: [
-    BrowserModule
+  declarations: [
+    AppComponent,
+    NannyShareComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
